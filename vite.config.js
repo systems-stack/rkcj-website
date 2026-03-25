@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "/Payroll_WebApp/", // This must match your repository name exactly
+  base: "/rkcj-website/", // This must match your repository name exactly
 })
