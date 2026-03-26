@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import { Menu, X, Phone, Mail, MapPin } from 'lucide-react';
 import './Layout.css';
+import logo from '../assets/logo.png';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -31,7 +32,7 @@ const Header = () => {
       {/* Main Navbar */}
       <nav className="navbar container">
         <Link to="/" className="logo">
-          <img src="/logo.png" alt="RKJ Logo" className="logo-img" />
+          <img src={logo} alt="RKJ Logo" className="logo-img" />
           <div className="logo-text-wrapper">
             <span className="logo-text" style={{ color: '#1473B9' }}>
               Rohit KC Jain <span className="logo-amp">& Co.</span>
