@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
+import { HashRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import MainLayout from './layout/MainLayout';
 import Home from './pages/Home';
@@ -30,9 +30,9 @@ function AnimatedRoutes() {
 
 function App() {
   return (
-    <BrowserRouter basename="/rkcj-website">
+    <HashRouter>
       <AnimatedRoutes />
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
